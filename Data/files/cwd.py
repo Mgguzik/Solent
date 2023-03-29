@@ -22,12 +22,17 @@ def run():
 # run()
 
 with open("trail.txt") as file:
-    text = file.read()
+    text = file.readlines()
     print(text)
-    print(text.split("\n"))
 
-def search(file_path):
-    print("Searching...", end="")
+    for each_item in text:
+        item = each_item.strip()
+        print(item)
+
+    # print(text.split("\n"))
+
+# def search(file_path):
+#     print("Searching...", end="")
 
 
 
