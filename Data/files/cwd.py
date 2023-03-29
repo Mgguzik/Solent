@@ -21,13 +21,22 @@ def run():
 
 # run()
 
+# with open("trail.txt") as file:
+#     text = file.readlines()
+#     print(text)
+#
+#     for each_item in text:
+#         item = each_item.strip()
+#         print(item)
+
 with open("trail.txt") as file:
-    text = file.readlines()
+    text = file.readline()
+    print(text)
+    text = file.readline()
+    print(text)
+    text = file.readline()
     print(text)
 
-    for each_item in text:
-        item = each_item.strip()
-        print(item)
 
     # print(text.split("\n"))
 
